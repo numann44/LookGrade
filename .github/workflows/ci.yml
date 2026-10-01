@@ -1,0 +1,44 @@
+name: iOS checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Localization, XCTest, and Release build
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record toolchain
+        run: xcodebuild -version
+      - name: Validate localization
+        run: python3 scripts/check_localizations.py
+      - name: Unit and regression tests
+        run: bash scripts/test.sh
+      - name: Unsigned Release build
+        run: |
+          xcodebuild build -project FaceRate.xcodeproj -scheme FaceRate \
+            -configuration Release -destination 'generic/platform=iOS' \
+            -derivedDataPath .build/Release \
+            -clonedSourcePackagesDirPath .build/SourcePackages \
+            -onlyUsePackageVersionsFromResolvedFile CODE_SIGNING_ALLOWED=NO
+      - name: Upload XCTest results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lookgrade-xctest-results
+          path: .build/UnitTests.xcresult
+          if-no-files-found: ignore
+          retention-days: 14

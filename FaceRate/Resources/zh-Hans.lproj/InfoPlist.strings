@@ -1,0 +1,3 @@
+/* System permission prompts. */
+"NSCameraUsageDescription" = "LookGrade 需要访问您的摄像头，以便捕捉您的面部信息进行设备端分析。";
+"NSPhotoLibraryUsageDescription" = "LookGrade 需要访问您的照片库，以便您可以选择一张现有的面部照片进行设备端分析。";

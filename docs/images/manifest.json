@@ -1,0 +1,38 @@
+{
+  "capture_date": "2026-09-05",
+  "locale": "en",
+  "device": "iPhone 17 Pro Max simulator",
+  "data": "Seeded demonstration values; fictional synthetic adult portrait; not customer results.",
+  "images": [
+    {
+      "file": "home.png",
+      "source": "AppStoreInputs/LookGrade-2026-09-05/screenshots/en/iphone/07-home-populated.png",
+      "sha256": "a28a925eee15413665fabe222b07c685a02dd44d9b4d50ed2b0b8a30aefdbcf5"
+    },
+    {
+      "file": "report.png",
+      "source": "AppStoreInputs/LookGrade-2026-09-05/screenshots/en/iphone/08-report-portrait.png",
+      "sha256": "15b561dbca97eea5977e57da566031b2a5d2fdd7e0be9f6bf21aa5c6ed2d3d18"
+    },
+    {
+      "file": "tips.png",
+      "source": "AppStoreInputs/LookGrade-2026-09-05/screenshots/en/iphone/10-personalized-tips.png",
+      "sha256": "614f772974cdec3cfda50088b96d0e8d2ccb691d3ac4901789bdae79e0e42782"
+    },
+    {
+      "file": "progress.png",
+      "source": "AppStoreInputs/LookGrade-2026-09-05/screenshots/en/iphone/11-progress-30-scans.png",
+      "sha256": "f16f08acce48a12060a6fa6db260de2430a62c55ce98f73c692e6b6661d9f453"
+    },
+    {
+      "file": "onboarding.png",
+      "source": "AppStoreInputs/LookGrade-2026-09-05/screenshots/en/iphone/01-onboarding-miro.png",
+      "sha256": "e897295e20b137dd053d3d56639bfe016a288ece7d530e1bcf1c455ccf37a428"
+    },
+    {
+      "file": "comparison.png",
+      "source": "AppStoreInputs/LookGrade-2026-09-05/screenshots/en/iphone/12-scan-comparison.png",
+      "sha256": "2fd6c39dba87bbbb48d0d4ecb2a20de73b39cc300c1b8ad78f02074b13bf1f2a"
+    }
+  ]
+}

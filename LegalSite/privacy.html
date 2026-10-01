@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LookGrade — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="logo" aria-hidden="true"></div>
+    <div class="brand">LookGrade <span>· Privacy</span></div>
+    <nav class="top"><a href="index.html">Home</a><a href="terms.html">Terms</a></nav>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="eff">Last updated: 21 September 2026</p>
+
+  <p>This Privacy Policy explains how the <strong>LookGrade</strong> iOS app (formerly FaceRate;
+  "LookGrade", "we", "us") handles your information. LookGrade is designed to be private by default: your facial
+  analysis runs entirely on your device.</p>
+
+  <p>LookGrade is operated by <strong>Ahmet Numan Şahin</strong>, the controller of the personal data described in this policy.</p>
+
+  <div class="callout">
+    <strong>In short:</strong> Your face photos, facial landmarks, pixel samples, scan results,
+    and comparison thumbnails are processed locally. LookGrade does not automatically upload
+    face data to us, Mixpanel, or RevenueCat. You can delete locally stored scan data from the app.
+    If you choose to share a report, the selected content goes to the app or recipient you choose.
+  </div>
+
+  <h2>1. Face data we access and generate</h2>
+  <p>For this policy, <strong>face data</strong> means the face photo you choose to provide and the
+  information generated from that photo. LookGrade accesses or generates the following face data:</p>
+  <ul>
+    <li><strong>Input photo</strong> — a photo you take with the camera or select using Apple's
+    photo picker.</li>
+    <li><strong>Temporary analysis data</strong> — a face bounding box, facial landmark and contour
+    coordinates, head-position measurements, and cheek-region color and luminance samples.</li>
+    <li><strong>Derived results</strong> — an overall score, category scores, findings, an estimated
+    face shape, and an estimated skin undertone.</li>
+    <li><strong>Comparison thumbnail</strong> — a locally stored JPEG copy reduced to no more than
+    480 pixels on its longest side for the before-and-after comparison feature.</li>
+  </ul>
+  <p>LookGrade does not create or store a biometric identity template, does not perform facial
+  recognition or identity matching, and does not use face data to authenticate a person.</p>
+
+  <h2>2. How face data is collected and used</h2>
+  <p>Face data is provided directly by you after you choose to take or select a photo. LookGrade
+  uses Apple's on-device <strong>Vision</strong> framework to detect facial landmarks and uses
+  local pixel sampling to calculate heuristic appearance scores and personalized self-care tips.
+  Face data is used only to:</p>
+  <ul>
+    <li>perform the face analysis you request;</li>
+    <li>display your score report and personalized tips;</li>
+    <li>show local scan history and progress trends; and</li>
+    <li>provide an on-device before-and-after comparison.</li>
+  </ul>
+  <p>Face data is not used for advertising, tracking, profiling across apps or websites, facial
+  recognition, identity verification, or training artificial-intelligence or machine-learning
+  models.</p>
+
+  <h2>3. On-device processing and storage</h2>
+  <p>All face detection, landmark processing, pixel sampling, scoring, and tip generation occurs
+  <strong>locally inside LookGrade's private app container on your device</strong>. LookGrade does
+  not operate a server that receives face data.</p>
+  <ul>
+    <li>The full-resolution working copy of the latest input photo is stored in the app's private
+    cache so the latest report can be displayed. A new scan removes the previous working copy.</li>
+    <li>Comparison thumbnails are stored in the app's private Application Support directory.</li>
+    <li>Scan dates, scores, findings, face-shape estimates, and undertone estimates are stored in
+    the app's local preferences and history.</li>
+    <li>Facial landmark coordinates, contours, bounding boxes, head-position measurements, and
+    raw cheek pixel samples exist only in memory while a scan is being analyzed and are discarded
+    when that analysis finishes. They are not saved to persistent storage.</li>
+  </ul>
+
+  <h2>4. Face data sharing and disclosure</h2>
+  <p><strong>LookGrade does not automatically upload face data to us or our analytics and subscription providers.</strong>
+  This includes input photos, thumbnails, landmarks, pixel samples, scores, findings, face-shape
+  estimates, and undertone estimates. Apple's Vision framework executes on the device as part of
+  iOS; LookGrade does not send Vision results to Apple or to an external service.</p>
+
+  <p>If you tap Share, iOS presents the sharing options and sends your chosen report content to the destination you select. That destination's privacy practices apply. Device backups and exports you make are also subject to your iOS and backup settings; deleting data in LookGrade does not erase a previously shared or backed-up copy.</p>
+
+  <h2>5. Face data retention and deletion</h2>
+  <ul>
+    <li><strong>Temporary analysis data:</strong> retained only in memory for the duration of the
+    requested analysis, then discarded immediately after analysis completes.</li>
+    <li><strong>Latest full-resolution working photo:</strong> retained locally until the next
+    scan replaces it, iOS purges the cache, you select <strong>Profile → Delete all data</strong>,
+    or you uninstall the app, whichever occurs first.</li>
+    <li><strong>Comparison thumbnails and scan summaries:</strong> retained locally until you use
+    <strong>Clear scan history</strong> or <strong>Delete all data</strong>, or uninstall the app.</li>
+    <li><strong>Latest derived result:</strong> retained locally until it is replaced by a later
+    scan, you select <strong>Delete all data</strong>, or you uninstall the app.</li>
+  </ul>
+  <p><strong>Profile → Delete all data</strong> removes all scan history, saved face photos,
+  thumbnails, and derived results from LookGrade's local storage and resets onboarding. This
+  deletion is immediate and cannot be undone. Deleting the app also removes its local app
+  container. LookGrade has no server-side copy of your scan photos or results to delete. Subscription records and optional usage analytics are separate; deleting local data does not erase those records.</p>
+
+  <p>Deleting scan history or resetting onboarding does not cancel your App Store subscription or reset the scan allowance. Minimal scan identifiers and timestamps are stored in the device Keychain to enforce the rolling allowance; entries older than 48 hours are pruned the next time the ledger is accessed. A subscription-recovery flag may remain in Keychain across reinstallation, but contains no photos, scores or face measurements. Apple and RevenueCat determine subscription access and trial eligibility.</p>
+
+  <h2>6. Camera and photo permission</h2>
+  <p>LookGrade requests camera access only when you choose to take a photo. It uses Apple's photo
+  picker when you choose an existing photo. Declining either permission prevents that capture
+  method but does not cause LookGrade to obtain the photo by another means. You can revoke camera
+  permission at any time in iOS Settings.</p>
+
+  <h2>7. Subscriptions and RevenueCat</h2>
+  <p>If you purchase a LookGrade Pro subscription, we use <strong>RevenueCat, Inc.</strong> to
+  manage and validate the purchase. To do this, RevenueCat receives an pseudonymous app-user
+  identifier, basic device metadata, and the App Store purchase/receipt information — this is
+  subscription metadata, not face data. RevenueCat does not receive your photos, thumbnails,
+  facial landmarks, pixel samples, scan results, face-shape estimate, or undertone estimate.
+  RevenueCat's handling of subscription data is
+  described in the
+  <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Privacy Policy</a>.
+  Payments themselves are processed by Apple under your Apple ID.</p>
+
+  <h2>8. Optional usage analytics</h2>
+  <p>With your permission, LookGrade uses <strong>Mixpanel</strong> to understand how people move through the app and identify technical issues. Analytics is off until you choose to allow it. Declining does not prevent onboarding, purchases, or access to features included in your subscription.</p>
+  <ul>
+    <li><strong>Interactions:</strong> screen visits and foreground time, onboarding navigation, button actions, visible sections, camera workflow actions, analysis duration and technical error codes.</li>
+    <li><strong>Purchase flow:</strong> plan selections, paywall and private-offer interactions, purchase or restore outcomes, product identifiers, displayed prices, currencies and trial/subscription status. Displayed prices are not records of money charged.</li>
+    <li><strong>Technical identifiers:</strong> a pseudonymous app-user ID, a randomly generated analytics device identifier, session identifiers, app/build version, language, device model, operating system and screen size. The app-user ID is shared with RevenueCat to relate subscription outcomes to the app experience.</li>
+  </ul>
+  <p><strong>We do not send names, onboarding answers, photos, facial measurements, scores, findings, face shape or skin undertone to Mixpanel.</strong> IP-derived geolocation is disabled; network providers still process IP addresses to deliver requests. We do not enable session replay or screen recordings.</p>
+  <p>You can withdraw analytics consent in <strong>Profile → Usage analytics</strong>. This stops future analytics and clears events still queued locally. It does not automatically erase events already received by Mixpanel. Profile → Delete all data also turns analytics off. You can request deletion of previously sent analytics by contacting us with the <strong>Privacy Request ID</strong> available in Profile. Contact us if you cannot reach Profile; do not post this identifier publicly.</p>
+  <p>Our Mixpanel project uses its <strong>European Union data region</strong>. Providers may process data internationally as described in their policies and contractual safeguards. See <a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel's Privacy Policy</a> and <a href="https://mixpanel.com/legal/subprocessor-list/">subprocessor list</a>.</p>
+  <p>We retain analytics records only for as long as they are needed to understand product usage, investigate reliability issues and support subscription-related requests. The retention decision considers whether the data is still useful for those purposes, its age, applicable legal duties and any deletion request. Turning analytics off or deleting the app does not automatically delete records already received by Mixpanel; contact us to request their removal. Subscription records may be retained separately by Apple and RevenueCat to validate purchases and meet their legal obligations.</p>
+  <p>App preferences are stored locally. LookGrade does not use advertising identifiers, sell personal data to data brokers, or operate a server-hosted face-photo profile. The basis for optional usage analytics is your consent; subscription-related processing is needed to provide and support the service. We may retain records when required by applicable law.</p>
+
+  <h2>9. Children</h2>
+  <p>LookGrade is not directed to children. The app is intended for users aged 17 and older and
+  should not be used by children.</p>
+
+  <h2>10. Your rights</h2>
+  <p>Depending on your region (e.g. GDPR/KVKK/CCPA), you may have rights to access, correct, or
+  delete your personal data. Since your scan data is stored only on your device, you can exercise
+  deletion directly in the app. For requests concerning subscription or analytics records, contact us below. Depending on applicable law, you may also have rights to restrict or object to processing, receive a copy of your data, withdraw consent and complain to the competent data-protection authority. Withdrawing consent does not affect processing that lawfully took place before withdrawal.</p>
+
+  <h2>11. Changes</h2>
+  <p>We may update this policy from time to time. Material changes will be reflected by the "Last
+  updated" date above.</p>
+
+  <h2>12. Contact</h2>
+  <p>Controller: Ahmet Numan Şahin.<br>Questions or privacy requests: <a href="mailto:ahmetnumansahin06@gmail.com">ahmetnumansahin06@gmail.com</a>.</p>
+
+  <footer class="site">
+    <span>© 2026 LookGrade</span>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms</a>
+    <a href="mailto:ahmetnumansahin06@gmail.com">Contact</a>
+  </footer>
+</div>
+</body>
+</html>

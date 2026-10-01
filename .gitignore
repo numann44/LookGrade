@@ -1,0 +1,35 @@
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+.claude/
+.codex/
+
+# Xcode and SwiftPM outputs (keep the shared Package.resolved)
+.build/
+DerivedData/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+*.xcresult/
+*.xcarchive/
+*.ipa
+*.dSYM/
+
+# Signing, local configuration, and logs
+*.p12
+*.p8
+*.mobileprovision
+*.cer
+.env
+.env.*
+!.env.example
+*.log
+ExportOptions*.plist
+
+# Working assets, duplicates, and campaign exports
+* 2.swift
+AppStoreCampaign/
+AppStoreInputs/
+AnimationPreviews/
+RiveBackups/

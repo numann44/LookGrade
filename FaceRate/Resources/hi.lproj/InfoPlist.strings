@@ -1,0 +1,3 @@
+/* System permission prompts. */
+"NSCameraUsageDescription" = "LookGrade को ऑन-डिवाइस एनालिसिस के लिए आपका चेहरा कैप्चर करने के लिए कैमरा एक्सेस की ज़रूरत है।";
+"NSPhotoLibraryUsageDescription" = "LookGrade को फ़ोटो लाइब्रेरी एक्सेस की ज़रूरत है ताकि आप ऑन-डिवाइस एनालिसिस के लिए मौजूदा चेहरे की फ़ोटो चुन सकें।";

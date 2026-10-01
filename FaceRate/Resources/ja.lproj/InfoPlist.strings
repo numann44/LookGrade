@@ -1,0 +1,3 @@
+/* System permission prompts. */
+"NSCameraUsageDescription" = "LookGradeは、デバイス上での顔分析のためにカメラへのアクセス権限を必要とします。";
+"NSPhotoLibraryUsageDescription" = "LookGradeは、デバイス上での分析に使用する既存の顔写真を選択できるように、フォトライブラリへのアクセス権限を必要とします。";

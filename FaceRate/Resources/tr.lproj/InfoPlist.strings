@@ -1,0 +1,3 @@
+/* System permission prompts. */
+"NSCameraUsageDescription" = "LookGrade, cihaz içi analiz için yüzünüzü yakalamak üzere kamera erişimine ihtiyaç duyar.";
+"NSPhotoLibraryUsageDescription" = "LookGrade, cihaz içi analiz için mevcut bir yüz fotoğrafı seçebilmeniz için fotoğraf kütüphanesi erişimine ihtiyaç duyar.";

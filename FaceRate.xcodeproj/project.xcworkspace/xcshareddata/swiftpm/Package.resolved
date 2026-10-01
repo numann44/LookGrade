@@ -1,0 +1,33 @@
+{
+  "originHash" : "88999c9d2316796fd776d2037ec5f3fcc2100f4953f4d56b76d58e91985a9dd6",
+  "pins" : [
+    {
+      "identity" : "mixpanel-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mixpanel/mixpanel-swift",
+      "state" : {
+        "revision" : "5f3020832a9594d98c129bf010a2bcc9dc4fa959",
+        "version" : "5.2.0"
+      }
+    },
+    {
+      "identity" : "purchases-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RevenueCat/purchases-ios",
+      "state" : {
+        "revision" : "8969bf1feaca2cc9efaa7630cd148cec5005f2f8",
+        "version" : "5.80.3"
+      }
+    },
+    {
+      "identity" : "rive-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rive-app/rive-ios",
+      "state" : {
+        "revision" : "c837a2bfeee2a502a119b65d83d989d1969477c2",
+        "version" : "6.25.1"
+      }
+    }
+  ],
+  "version" : 3
+}

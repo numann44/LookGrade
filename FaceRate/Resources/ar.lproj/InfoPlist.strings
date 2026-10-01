@@ -1,0 +1,3 @@
+/* System permission prompts. */
+"NSCameraUsageDescription" = "يحتاج تطبيق LookGrade إلى الوصول إلى الكاميرا لالتقاط صورة وجهك لتحليلها على الجهاز.";
+"NSPhotoLibraryUsageDescription" = "يحتاج تطبيق LookGrade إلى الوصول إلى مكتبة الصور لتتمكن من اختيار صورة وجه موجودة لتحليلها على الجهاز.";

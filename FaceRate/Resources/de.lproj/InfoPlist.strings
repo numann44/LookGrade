@@ -1,0 +1,3 @@
+/* System permission prompts. */
+"NSCameraUsageDescription" = "LookGrade benötigt Zugriff auf deine Kamera, um dein Gesicht für die Geräteanalyse zu erfassen.";
+"NSPhotoLibraryUsageDescription" = "LookGrade benötigt Zugriff auf deine Fotobibliothek, damit du ein vorhandenes Foto für die Geräteanalyse auswählen kannst.";
