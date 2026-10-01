@@ -37,4 +37,4 @@ Deleting local data does not delete events that were already delivered to an ext
 
 The checked-in service values are client SDK/ingestion configuration, not server administrative keys. Configure your own projects before sending test events or evaluating your own catalog. Signing keys, provisioning profiles, server credentials, and raw customer exports do not belong in Git.
 
-The included [legal-site source](../LegalSite/) and `PrivacyInfo.xcprivacy` describe part of the release configuration. Repository publication does not change App Store Privacy disclosures, legal URLs, account ownership, or provider-side policies.
+The included [legal-site source and deployment guide](../LegalSite/README.md) and `PrivacyInfo.xcprivacy` describe part of the release configuration. GitHub Pages publishes privacy, terms, and support from this repository at <https://numann44.github.io/LookGrade/>. `LegalLinks.swift` uses these URLs. This does not update installed app binaries, App Store Connect metadata, App Store Privacy disclosures, account ownership, or provider-side policies; the deployment guide records the release migration steps.

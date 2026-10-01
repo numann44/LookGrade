@@ -1,0 +1,39 @@
+name: Publish legal pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'LegalSite/**'
+      - '.github/workflows/legal-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: legal-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy privacy, terms, and support
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload the legal site only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: LegalSite
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

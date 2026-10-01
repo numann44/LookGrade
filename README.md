@@ -7,7 +7,8 @@
     <a href="https://apps.apple.com/app/lookgrade/id6789945408">Download on the App Store</a> ·
     <a href="docs/ARCHITECTURE.md">Architecture</a> ·
     <a href="docs/VISION-PIPELINE.md">Vision pipeline</a> ·
-    <a href="docs/SETUP.md">Run locally</a>
+    <a href="docs/SETUP.md">Run locally</a> ·
+    <a href="https://numann44.github.io/LookGrade/">Privacy &amp; support</a>
   </p>
   <a href="https://github.com/numann44/LookGrade/actions/workflows/ci.yml"><img src="https://github.com/numann44/LookGrade/actions/workflows/ci.yml/badge.svg" alt="iOS checks"></a>
 </div>
