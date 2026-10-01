@@ -50,16 +50,11 @@ These are real SwiftUI screens from the supplied September 5, 2026 simulator cap
 ## How a scan becomes a report
 
 ```mermaid
-flowchart LR
-    A[Camera or photo library] --> B[Normalize image orientation]
-    B --> C[Apple Vision landmarks]
-    C --> D[Pixel-space FaceMetrics]
-    D --> E[Cheek-region image statistics]
-    E --> F[Capture-quality checks]
-    F --> G[Eight heuristic category scores]
-    G --> H[Findings and face-profile descriptors]
-    H --> I[SwiftUI report]
-    I --> J[Local history and thumbnails]
+flowchart TD
+    A[Camera or photo library] --> B[Image preparation and Apple Vision]
+    B --> C[Geometry, pixel sampling, and quality checks]
+    C --> D[Heuristic scores, findings, and report]
+    D --> E[Local history and thumbnails]
 ```
 
 The categories are symmetry, skin quality, jawline, eyes, lips, nose, tone, and harmony. The scorer maps each heuristic quality value into **5.5–9.5**, then computes a weighted overall score. These are product-design choices, not learned confidence probabilities. [The pipeline guide](docs/VISION-PIPELINE.md) documents formulas, thresholds, fallbacks, and limitations.
