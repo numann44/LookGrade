@@ -15,7 +15,7 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="eff">Last updated: 21 September 2026</p>
+  <p class="eff">Last updated: 6 October 2026</p>
 
   <p>This Privacy Policy explains how the <strong>LookGrade</strong> iOS app (formerly FaceRate;
   "LookGrade", "we", "us") handles your information. LookGrade is designed to be private by default: your facial
@@ -101,7 +101,7 @@
   deletion is immediate and cannot be undone. Deleting the app also removes its local app
   container. LookGrade has no server-side copy of your scan photos or results to delete. Subscription records and optional usage analytics are separate; deleting local data does not erase those records.</p>
 
-  <p>Deleting scan history or resetting onboarding does not cancel your App Store subscription or reset the scan allowance. Minimal scan identifiers and timestamps are stored in the device Keychain to enforce the rolling allowance; entries older than 48 hours are pruned the next time the ledger is accessed. A subscription-recovery flag may remain in Keychain across reinstallation, but contains no photos, scores or face measurements. Apple and RevenueCat determine subscription access and trial eligibility.</p>
+  <p>Deleting scan history or resetting onboarding does not cancel your App Store subscription or reset the scan allowance. Minimal scan identifiers and timestamps are stored in the device Keychain and mirrored in local app preferences to enforce the rolling allowance and preserve it through app updates, including changes in developer ownership. Entries older than 48 hours are pruned the next time the ledger is accessed. A subscription-recovery flag is also stored locally and may remain in Keychain across reinstallation; it contains no photos, scores or face measurements and never grants subscription access by itself. A developer-account transfer can make the previous owner's Keychain inaccessible; data that exists only in that old Keychain cannot be recovered. Apple and RevenueCat determine subscription access and trial eligibility.</p>
 
   <h2>6. Camera and photo permission</h2>
   <p>LookGrade requests camera access only when you choose to take a photo. It uses Apple's photo
